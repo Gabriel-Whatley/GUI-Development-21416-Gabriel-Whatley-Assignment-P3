@@ -23,7 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         PictureBox1 = New PictureBox()
-        GroupBox1 = New GroupBox()
         RadioButton7 = New RadioButton()
         RadioButton6 = New RadioButton()
         RadioButton5 = New RadioButton()
@@ -31,7 +30,6 @@ Partial Class Form1
         RadioButton3 = New RadioButton()
         Label1 = New Label()
         Label2 = New Label()
-        GroupBox2 = New GroupBox()
         RadioButton2 = New RadioButton()
         RadioButton1 = New RadioButton()
         Label3 = New Label()
@@ -39,9 +37,11 @@ Partial Class Form1
         btn_calc = New Button()
         btn_clear = New Button()
         lbl_output = New Label()
+        Panel1 = New Panel()
+        Panel2 = New Panel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        GroupBox1.SuspendLayout()
-        GroupBox2.SuspendLayout()
+        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -54,26 +54,11 @@ Partial Class Form1
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.BackColor = Color.PapayaWhip
-        GroupBox1.Controls.Add(RadioButton7)
-        GroupBox1.Controls.Add(RadioButton6)
-        GroupBox1.Controls.Add(RadioButton5)
-        GroupBox1.Controls.Add(RadioButton4)
-        GroupBox1.Controls.Add(RadioButton3)
-        GroupBox1.Location = New Point(18, 121)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(276, 177)
-        GroupBox1.TabIndex = 1
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
-        ' 
         ' RadioButton7
         ' 
         RadioButton7.AutoSize = True
         RadioButton7.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton7.Location = New Point(21, 129)
+        RadioButton7.Location = New Point(13, 113)
         RadioButton7.Name = "RadioButton7"
         RadioButton7.Size = New Size(121, 20)
         RadioButton7.TabIndex = 4
@@ -85,7 +70,7 @@ Partial Class Form1
         ' 
         RadioButton6.AutoSize = True
         RadioButton6.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton6.Location = New Point(21, 104)
+        RadioButton6.Location = New Point(13, 88)
         RadioButton6.Name = "RadioButton6"
         RadioButton6.Size = New Size(225, 20)
         RadioButton6.TabIndex = 3
@@ -97,7 +82,7 @@ Partial Class Form1
         ' 
         RadioButton5.AutoSize = True
         RadioButton5.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton5.Location = New Point(21, 79)
+        RadioButton5.Location = New Point(13, 63)
         RadioButton5.Name = "RadioButton5"
         RadioButton5.Size = New Size(129, 20)
         RadioButton5.TabIndex = 2
@@ -109,7 +94,7 @@ Partial Class Form1
         ' 
         RadioButton4.AutoSize = True
         RadioButton4.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton4.Location = New Point(21, 54)
+        RadioButton4.Location = New Point(13, 38)
         RadioButton4.Name = "RadioButton4"
         RadioButton4.Size = New Size(193, 20)
         RadioButton4.TabIndex = 1
@@ -121,7 +106,7 @@ Partial Class Form1
         ' 
         RadioButton3.AutoSize = True
         RadioButton3.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton3.Location = New Point(21, 29)
+        RadioButton3.Location = New Point(13, 13)
         RadioButton3.Name = "RadioButton3"
         RadioButton3.Size = New Size(193, 20)
         RadioButton3.TabIndex = 0
@@ -149,23 +134,11 @@ Partial Class Form1
         Label2.TabIndex = 3
         Label2.Text = "Star Market"
         ' 
-        ' GroupBox2
-        ' 
-        GroupBox2.BackColor = Color.PapayaWhip
-        GroupBox2.Controls.Add(RadioButton2)
-        GroupBox2.Controls.Add(RadioButton1)
-        GroupBox2.Location = New Point(75, 336)
-        GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(172, 79)
-        GroupBox2.TabIndex = 4
-        GroupBox2.TabStop = False
-        GroupBox2.Text = "GroupBox2"
-        ' 
         ' RadioButton2
         ' 
         RadioButton2.AutoSize = True
         RadioButton2.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton2.Location = New Point(14, 48)
+        RadioButton2.Location = New Point(13, 39)
         RadioButton2.Name = "RadioButton2"
         RadioButton2.Size = New Size(145, 20)
         RadioButton2.TabIndex = 1
@@ -177,7 +150,7 @@ Partial Class Form1
         ' 
         RadioButton1.AutoSize = True
         RadioButton1.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton1.Location = New Point(14, 22)
+        RadioButton1.Location = New Point(13, 13)
         RadioButton1.Name = "RadioButton1"
         RadioButton1.Size = New Size(81, 20)
         RadioButton1.TabIndex = 0
@@ -228,41 +201,69 @@ Partial Class Form1
         ' 
         lbl_output.AutoSize = True
         lbl_output.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        lbl_output.Location = New Point(39, 468)
+        lbl_output.Location = New Point(71, 399)
         lbl_output.Name = "lbl_output"
         lbl_output.Size = New Size(95, 21)
         lbl_output.TabIndex = 9
         lbl_output.Text = "Please Pay:"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.AutoSize = True
+        Panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Panel1.BackColor = Color.PapayaWhip
+        Panel1.Controls.Add(RadioButton7)
+        Panel1.Controls.Add(RadioButton3)
+        Panel1.Controls.Add(RadioButton6)
+        Panel1.Controls.Add(RadioButton4)
+        Panel1.Controls.Add(RadioButton5)
+        Panel1.Location = New Point(36, 132)
+        Panel1.Name = "Panel1"
+        Panel1.Padding = New Padding(10)
+        Panel1.Size = New Size(251, 146)
+        Panel1.TabIndex = 10
+        ' 
+        ' Panel2
+        ' 
+        Panel2.AutoSize = True
+        Panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        Panel2.BackColor = Color.PapayaWhip
+        Panel2.Controls.Add(RadioButton2)
+        Panel2.Controls.Add(RadioButton1)
+        Panel2.Location = New Point(71, 301)
+        Panel2.Name = "Panel2"
+        Panel2.Padding = New Padding(10)
+        Panel2.Size = New Size(171, 72)
+        Panel2.TabIndex = 11
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Wheat
-        ClientSize = New Size(697, 523)
+        ClientSize = New Size(697, 462)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
         Controls.Add(lbl_output)
         Controls.Add(btn_clear)
         Controls.Add(btn_calc)
         Controls.Add(textbox_input)
         Controls.Add(Label3)
-        Controls.Add(GroupBox2)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(GroupBox1)
         Controls.Add(PictureBox1)
         Name = "Form1"
         Text = "Catering"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
-        GroupBox2.ResumeLayout(False)
-        GroupBox2.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents RadioButton7 As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
@@ -270,7 +271,6 @@ Partial Class Form1
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents Label2 As Label
-    Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Label3 As Label
@@ -278,5 +278,7 @@ Partial Class Form1
     Friend WithEvents btn_calc As Button
     Friend WithEvents btn_clear As Button
     Friend WithEvents lbl_output As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
 
 End Class

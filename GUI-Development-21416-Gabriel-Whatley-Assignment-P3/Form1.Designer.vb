@@ -56,6 +56,7 @@ Partial Class Form1
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.PapayaWhip
         GroupBox1.Controls.Add(RadioButton7)
         GroupBox1.Controls.Add(RadioButton6)
         GroupBox1.Controls.Add(RadioButton5)
@@ -150,6 +151,7 @@ Partial Class Form1
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.BackColor = Color.PapayaWhip
         GroupBox2.Controls.Add(RadioButton2)
         GroupBox2.Controls.Add(RadioButton1)
         GroupBox2.Location = New Point(75, 336)
@@ -200,6 +202,7 @@ Partial Class Form1
         textbox_input.Name = "textbox_input"
         textbox_input.Size = New Size(100, 29)
         textbox_input.TabIndex = 6
+        textbox_input.TextAlign = HorizontalAlignment.Center
         ' 
         ' btn_calc
         ' 
@@ -235,7 +238,8 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(697, 525)
+        BackColor = Color.Wheat
+        ClientSize = New Size(697, 523)
         Controls.Add(lbl_output)
         Controls.Add(btn_clear)
         Controls.Add(btn_calc)
@@ -247,7 +251,7 @@ Partial Class Form1
         Controls.Add(GroupBox1)
         Controls.Add(PictureBox1)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Catering"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()

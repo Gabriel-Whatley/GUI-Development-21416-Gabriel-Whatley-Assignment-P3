@@ -37,11 +37,11 @@ Partial Class Form1
         btn_calc = New Button()
         btn_clear = New Button()
         lbl_output = New Label()
-        Panel1 = New Panel()
-        Panel2 = New Panel()
+        pnl_dish_selection = New Panel()
+        pnl_payment_type = New Panel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
+        pnl_dish_selection.SuspendLayout()
+        pnl_payment_type.SuspendLayout()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -207,34 +207,34 @@ Partial Class Form1
         lbl_output.TabIndex = 9
         lbl_output.Text = "Please Pay:"
         ' 
-        ' Panel1
+        ' pnl_dish_selection
         ' 
-        Panel1.AutoSize = True
-        Panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Panel1.BackColor = Color.PapayaWhip
-        Panel1.Controls.Add(rdio_fruit)
-        Panel1.Controls.Add(rdio_singl_shrimp)
-        Panel1.Controls.Add(rdio_sausage)
-        Panel1.Controls.Add(rdio_pinwheel)
-        Panel1.Controls.Add(rdio_veggie)
-        Panel1.Location = New Point(36, 132)
-        Panel1.Name = "Panel1"
-        Panel1.Padding = New Padding(10)
-        Panel1.Size = New Size(251, 146)
-        Panel1.TabIndex = 10
+        pnl_dish_selection.AutoSize = True
+        pnl_dish_selection.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        pnl_dish_selection.BackColor = Color.PapayaWhip
+        pnl_dish_selection.Controls.Add(rdio_fruit)
+        pnl_dish_selection.Controls.Add(rdio_singl_shrimp)
+        pnl_dish_selection.Controls.Add(rdio_sausage)
+        pnl_dish_selection.Controls.Add(rdio_pinwheel)
+        pnl_dish_selection.Controls.Add(rdio_veggie)
+        pnl_dish_selection.Location = New Point(36, 132)
+        pnl_dish_selection.Name = "pnl_dish_selection"
+        pnl_dish_selection.Padding = New Padding(10)
+        pnl_dish_selection.Size = New Size(251, 146)
+        pnl_dish_selection.TabIndex = 10
         ' 
-        ' Panel2
+        ' pnl_payment_type
         ' 
-        Panel2.AutoSize = True
-        Panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Panel2.BackColor = Color.PapayaWhip
-        Panel2.Controls.Add(rdio_pickup_pay)
-        Panel2.Controls.Add(rdio_pre_pay)
-        Panel2.Location = New Point(71, 301)
-        Panel2.Name = "Panel2"
-        Panel2.Padding = New Padding(10)
-        Panel2.Size = New Size(171, 72)
-        Panel2.TabIndex = 11
+        pnl_payment_type.AutoSize = True
+        pnl_payment_type.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        pnl_payment_type.BackColor = Color.PapayaWhip
+        pnl_payment_type.Controls.Add(rdio_pickup_pay)
+        pnl_payment_type.Controls.Add(rdio_pre_pay)
+        pnl_payment_type.Location = New Point(71, 301)
+        pnl_payment_type.Name = "pnl_payment_type"
+        pnl_payment_type.Padding = New Padding(10)
+        pnl_payment_type.Size = New Size(171, 72)
+        pnl_payment_type.TabIndex = 11
         ' 
         ' Form1
         ' 
@@ -242,8 +242,8 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Wheat
         ClientSize = New Size(697, 462)
-        Controls.Add(Panel2)
-        Controls.Add(Panel1)
+        Controls.Add(pnl_payment_type)
+        Controls.Add(pnl_dish_selection)
         Controls.Add(lbl_output)
         Controls.Add(btn_clear)
         Controls.Add(btn_calc)
@@ -253,12 +253,13 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Catering"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
+        pnl_dish_selection.ResumeLayout(False)
+        pnl_dish_selection.PerformLayout()
+        pnl_payment_type.ResumeLayout(False)
+        pnl_payment_type.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -278,7 +279,7 @@ Partial Class Form1
     Friend WithEvents btn_calc As Button
     Friend WithEvents btn_clear As Button
     Friend WithEvents lbl_output As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents pnl_dish_selection As Panel
+    Friend WithEvents pnl_payment_type As Panel
 
 End Class

@@ -23,15 +23,15 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         PictureBox1 = New PictureBox()
-        RadioButton7 = New RadioButton()
-        RadioButton6 = New RadioButton()
-        RadioButton5 = New RadioButton()
-        RadioButton4 = New RadioButton()
-        RadioButton3 = New RadioButton()
+        rdio_fruit = New RadioButton()
+        rdio_sausage = New RadioButton()
+        rdio_veggie = New RadioButton()
+        rdio_pinwheel = New RadioButton()
+        rdio_singl_shrimp = New RadioButton()
         Label1 = New Label()
         Label2 = New Label()
-        RadioButton2 = New RadioButton()
-        RadioButton1 = New RadioButton()
+        rdio_pickup_pay = New RadioButton()
+        rdio_pre_pay = New RadioButton()
         Label3 = New Label()
         textbox_input = New TextBox()
         btn_calc = New Button()
@@ -54,73 +54,73 @@ Partial Class Form1
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' RadioButton7
+        ' rdio_fruit
         ' 
-        RadioButton7.AutoSize = True
-        RadioButton7.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton7.Location = New Point(13, 113)
-        RadioButton7.Name = "RadioButton7"
-        RadioButton7.Size = New Size(121, 20)
-        RadioButton7.TabIndex = 4
-        RadioButton7.TabStop = True
-        RadioButton7.Text = "Fruit $29.99"
-        RadioButton7.UseVisualStyleBackColor = True
+        rdio_fruit.AutoSize = True
+        rdio_fruit.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_fruit.Location = New Point(13, 113)
+        rdio_fruit.Name = "rdio_fruit"
+        rdio_fruit.Size = New Size(121, 20)
+        rdio_fruit.TabIndex = 4
+        rdio_fruit.TabStop = True
+        rdio_fruit.Text = "Fruit $29.99"
+        rdio_fruit.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton6
+        ' rdio_sausage
         ' 
-        RadioButton6.AutoSize = True
-        RadioButton6.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton6.Location = New Point(13, 88)
-        RadioButton6.Name = "RadioButton6"
-        RadioButton6.Size = New Size(225, 20)
-        RadioButton6.TabIndex = 3
-        RadioButton6.TabStop = True
-        RadioButton6.Text = "Sausage and Cheese $49.99"
-        RadioButton6.UseVisualStyleBackColor = True
+        rdio_sausage.AutoSize = True
+        rdio_sausage.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_sausage.Location = New Point(13, 88)
+        rdio_sausage.Name = "rdio_sausage"
+        rdio_sausage.Size = New Size(225, 20)
+        rdio_sausage.TabIndex = 3
+        rdio_sausage.TabStop = True
+        rdio_sausage.Text = "Sausage and Cheese $49.99"
+        rdio_sausage.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton5
+        ' rdio_veggie
         ' 
-        RadioButton5.AutoSize = True
-        RadioButton5.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton5.Location = New Point(13, 63)
-        RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(129, 20)
-        RadioButton5.TabIndex = 2
-        RadioButton5.TabStop = True
-        RadioButton5.Text = "Veggie $29.99"
-        RadioButton5.UseVisualStyleBackColor = True
+        rdio_veggie.AutoSize = True
+        rdio_veggie.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_veggie.Location = New Point(13, 63)
+        rdio_veggie.Name = "rdio_veggie"
+        rdio_veggie.Size = New Size(129, 20)
+        rdio_veggie.TabIndex = 2
+        rdio_veggie.TabStop = True
+        rdio_veggie.Text = "Veggie $29.99"
+        rdio_veggie.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton4
+        ' rdio_pinwheel
         ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton4.Location = New Point(13, 38)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(193, 20)
-        RadioButton4.TabIndex = 1
-        RadioButton4.TabStop = True
-        RadioButton4.Text = "Pinwheel Wraps $59.99"
-        RadioButton4.UseVisualStyleBackColor = True
+        rdio_pinwheel.AutoSize = True
+        rdio_pinwheel.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_pinwheel.Location = New Point(13, 38)
+        rdio_pinwheel.Name = "rdio_pinwheel"
+        rdio_pinwheel.Size = New Size(193, 20)
+        rdio_pinwheel.TabIndex = 1
+        rdio_pinwheel.TabStop = True
+        rdio_pinwheel.Text = "Pinwheel Wraps $59.99"
+        rdio_pinwheel.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton3
+        ' rdio_singl_shrimp
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton3.Location = New Point(13, 13)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(193, 20)
-        RadioButton3.TabIndex = 0
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "Gourmet Cheese $49.99"
-        RadioButton3.UseVisualStyleBackColor = True
+        rdio_singl_shrimp.AutoSize = True
+        rdio_singl_shrimp.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_singl_shrimp.Location = New Point(13, 13)
+        rdio_singl_shrimp.Name = "rdio_singl_shrimp"
+        rdio_singl_shrimp.Size = New Size(201, 20)
+        rdio_singl_shrimp.TabIndex = 0
+        rdio_singl_shrimp.TabStop = True
+        rdio_singl_shrimp.Text = "A Single Shrimp $49.99"
+        rdio_singl_shrimp.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(105, 21)
+        Label1.Font = New Font("Freestyle Script", 60F, FontStyle.Bold)
+        Label1.Location = New Point(51, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(127, 37)
+        Label1.Size = New Size(223, 95)
         Label1.TabIndex = 2
         Label1.Text = "Catering"
         ' 
@@ -128,35 +128,35 @@ Partial Class Form1
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(118, 68)
+        Label2.Location = New Point(113, 89)
         Label2.Name = "Label2"
         Label2.Size = New Size(98, 21)
         Label2.TabIndex = 3
         Label2.Text = "Star Market"
         ' 
-        ' RadioButton2
+        ' rdio_pickup_pay
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton2.Location = New Point(13, 39)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(145, 20)
-        RadioButton2.TabIndex = 1
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Pay upon Pickup"
-        RadioButton2.UseVisualStyleBackColor = True
+        rdio_pickup_pay.AutoSize = True
+        rdio_pickup_pay.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_pickup_pay.Location = New Point(13, 39)
+        rdio_pickup_pay.Name = "rdio_pickup_pay"
+        rdio_pickup_pay.Size = New Size(145, 20)
+        rdio_pickup_pay.TabIndex = 1
+        rdio_pickup_pay.TabStop = True
+        rdio_pickup_pay.Text = "Pay upon Pickup"
+        rdio_pickup_pay.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton1
+        ' rdio_pre_pay
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        RadioButton1.Location = New Point(13, 13)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(81, 20)
-        RadioButton1.TabIndex = 0
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Pre-Pay"
-        RadioButton1.UseVisualStyleBackColor = True
+        rdio_pre_pay.AutoSize = True
+        rdio_pre_pay.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_pre_pay.Location = New Point(13, 13)
+        rdio_pre_pay.Name = "rdio_pre_pay"
+        rdio_pre_pay.Size = New Size(81, 20)
+        rdio_pre_pay.TabIndex = 0
+        rdio_pre_pay.TabStop = True
+        rdio_pre_pay.Text = "Pre-Pay"
+        rdio_pre_pay.UseVisualStyleBackColor = True
         ' 
         ' Label3
         ' 
@@ -212,11 +212,11 @@ Partial Class Form1
         Panel1.AutoSize = True
         Panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink
         Panel1.BackColor = Color.PapayaWhip
-        Panel1.Controls.Add(RadioButton7)
-        Panel1.Controls.Add(RadioButton3)
-        Panel1.Controls.Add(RadioButton6)
-        Panel1.Controls.Add(RadioButton4)
-        Panel1.Controls.Add(RadioButton5)
+        Panel1.Controls.Add(rdio_fruit)
+        Panel1.Controls.Add(rdio_singl_shrimp)
+        Panel1.Controls.Add(rdio_sausage)
+        Panel1.Controls.Add(rdio_pinwheel)
+        Panel1.Controls.Add(rdio_veggie)
         Panel1.Location = New Point(36, 132)
         Panel1.Name = "Panel1"
         Panel1.Padding = New Padding(10)
@@ -228,8 +228,8 @@ Partial Class Form1
         Panel2.AutoSize = True
         Panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink
         Panel2.BackColor = Color.PapayaWhip
-        Panel2.Controls.Add(RadioButton2)
-        Panel2.Controls.Add(RadioButton1)
+        Panel2.Controls.Add(rdio_pickup_pay)
+        Panel2.Controls.Add(rdio_pre_pay)
         Panel2.Location = New Point(71, 301)
         Panel2.Name = "Panel2"
         Panel2.Padding = New Padding(10)
@@ -265,14 +265,14 @@ Partial Class Form1
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents rdio_fruit As RadioButton
+    Friend WithEvents rdio_sausage As RadioButton
+    Friend WithEvents rdio_veggie As RadioButton
+    Friend WithEvents rdio_pinwheel As RadioButton
+    Friend WithEvents rdio_singl_shrimp As RadioButton
     Friend WithEvents Label2 As Label
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents rdio_pickup_pay As RadioButton
+    Friend WithEvents rdio_pre_pay As RadioButton
     Friend WithEvents Label3 As Label
     Friend WithEvents textbox_input As TextBox
     Friend WithEvents btn_calc As Button

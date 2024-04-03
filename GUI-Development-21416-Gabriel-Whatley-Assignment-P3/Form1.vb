@@ -57,10 +57,10 @@ Public Class Form1
 
     Private Sub set_output(output_dec As Decimal) 'Set the output label using a supplied decimal, if the supplied decimal is 0, clear the output.
         Dim output_str As String
-        If output_dec = 0 Then
+        If output_dec = 0 Then ' if the argument is 0 reset the output to nothing.
             output_str = ""
         Else
-            output_str = FormatCurrency(output_dec, , , TriState.True, TriState.True)
+            output_str = FormatCurrency(output_dec, , , TriState.True, TriState.True) ' If the argument is a value, Convert the decimal price to a currency format
         End If
         lbl_output.Text = "Please Pay: " + output_str
     End Sub

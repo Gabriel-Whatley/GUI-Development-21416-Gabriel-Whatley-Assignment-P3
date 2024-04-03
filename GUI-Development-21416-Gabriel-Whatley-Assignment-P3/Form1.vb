@@ -60,9 +60,9 @@ Public Class Form1
         If output_dec = 0 Then
             output_str = ""
         Else
-            output_str = String.Format(output_dec.ToString, "##,##0.00")
+            output_str = FormatCurrency(output_dec, , , TriState.True, TriState.True)
         End If
-        lbl_output.Text = "Please Pay: $" + output_str
+        lbl_output.Text = "Please Pay: " + output_str
     End Sub
 
     Private Sub clear() 'Clear all inputs and reset the form to defaults, focus on input box.

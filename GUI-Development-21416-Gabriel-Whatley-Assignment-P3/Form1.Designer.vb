@@ -23,10 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         PictureBox1 = New PictureBox()
-        rdio_fruit = New RadioButton()
-        rdio_sausage = New RadioButton()
-        rdio_veggie = New RadioButton()
-        rdio_pinwheel = New RadioButton()
+        rdio_durian = New RadioButton()
+        rdio_grits = New RadioButton()
+        rdio_sushi = New RadioButton()
+        rdio_boyardee = New RadioButton()
         rdio_singl_shrimp = New RadioButton()
         Label1 = New Label()
         Label2 = New Label()
@@ -54,53 +54,53 @@ Partial Class Form1
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' rdio_fruit
+        ' rdio_durian
         ' 
-        rdio_fruit.AutoSize = True
-        rdio_fruit.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        rdio_fruit.Location = New Point(13, 113)
-        rdio_fruit.Name = "rdio_fruit"
-        rdio_fruit.Size = New Size(121, 20)
-        rdio_fruit.TabIndex = 4
-        rdio_fruit.TabStop = True
-        rdio_fruit.Text = "Fruit $29.99"
-        rdio_fruit.UseVisualStyleBackColor = True
+        rdio_durian.AutoSize = True
+        rdio_durian.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_durian.Location = New Point(13, 113)
+        rdio_durian.Name = "rdio_durian"
+        rdio_durian.Size = New Size(129, 20)
+        rdio_durian.TabIndex = 4
+        rdio_durian.TabStop = True
+        rdio_durian.Text = "Durian $29.99"
+        rdio_durian.UseVisualStyleBackColor = True
         ' 
-        ' rdio_sausage
+        ' rdio_grits
         ' 
-        rdio_sausage.AutoSize = True
-        rdio_sausage.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        rdio_sausage.Location = New Point(13, 88)
-        rdio_sausage.Name = "rdio_sausage"
-        rdio_sausage.Size = New Size(225, 20)
-        rdio_sausage.TabIndex = 3
-        rdio_sausage.TabStop = True
-        rdio_sausage.Text = "Sausage and Cheese $49.99"
-        rdio_sausage.UseVisualStyleBackColor = True
+        rdio_grits.AutoSize = True
+        rdio_grits.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_grits.Location = New Point(13, 88)
+        rdio_grits.Name = "rdio_grits"
+        rdio_grits.Size = New Size(201, 20)
+        rdio_grits.TabIndex = 3
+        rdio_grits.TabStop = True
+        rdio_grits.Text = "Expensive Grits $49.99"
+        rdio_grits.UseVisualStyleBackColor = True
         ' 
-        ' rdio_veggie
+        ' rdio_sushi
         ' 
-        rdio_veggie.AutoSize = True
-        rdio_veggie.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        rdio_veggie.Location = New Point(13, 63)
-        rdio_veggie.Name = "rdio_veggie"
-        rdio_veggie.Size = New Size(129, 20)
-        rdio_veggie.TabIndex = 2
-        rdio_veggie.TabStop = True
-        rdio_veggie.Text = "Veggie $29.99"
-        rdio_veggie.UseVisualStyleBackColor = True
+        rdio_sushi.AutoSize = True
+        rdio_sushi.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_sushi.Location = New Point(13, 63)
+        rdio_sushi.Name = "rdio_sushi"
+        rdio_sushi.Size = New Size(121, 20)
+        rdio_sushi.TabIndex = 2
+        rdio_sushi.TabStop = True
+        rdio_sushi.Text = "Sushi $29.99"
+        rdio_sushi.UseVisualStyleBackColor = True
         ' 
-        ' rdio_pinwheel
+        ' rdio_boyardee
         ' 
-        rdio_pinwheel.AutoSize = True
-        rdio_pinwheel.Font = New Font("Courier New", 10F, FontStyle.Bold)
-        rdio_pinwheel.Location = New Point(13, 38)
-        rdio_pinwheel.Name = "rdio_pinwheel"
-        rdio_pinwheel.Size = New Size(193, 20)
-        rdio_pinwheel.TabIndex = 1
-        rdio_pinwheel.TabStop = True
-        rdio_pinwheel.Text = "Pinwheel Wraps $59.99"
-        rdio_pinwheel.UseVisualStyleBackColor = True
+        rdio_boyardee.AutoSize = True
+        rdio_boyardee.Font = New Font("Courier New", 10F, FontStyle.Bold)
+        rdio_boyardee.Location = New Point(13, 38)
+        rdio_boyardee.Name = "rdio_boyardee"
+        rdio_boyardee.Size = New Size(185, 20)
+        rdio_boyardee.TabIndex = 1
+        rdio_boyardee.TabStop = True
+        rdio_boyardee.Text = "Chef Boyardee $59.99"
+        rdio_boyardee.UseVisualStyleBackColor = True
         ' 
         ' rdio_singl_shrimp
         ' 
@@ -212,15 +212,15 @@ Partial Class Form1
         pnl_dish_selection.AutoSize = True
         pnl_dish_selection.AutoSizeMode = AutoSizeMode.GrowAndShrink
         pnl_dish_selection.BackColor = Color.PapayaWhip
-        pnl_dish_selection.Controls.Add(rdio_fruit)
+        pnl_dish_selection.Controls.Add(rdio_durian)
         pnl_dish_selection.Controls.Add(rdio_singl_shrimp)
-        pnl_dish_selection.Controls.Add(rdio_sausage)
-        pnl_dish_selection.Controls.Add(rdio_pinwheel)
-        pnl_dish_selection.Controls.Add(rdio_veggie)
+        pnl_dish_selection.Controls.Add(rdio_grits)
+        pnl_dish_selection.Controls.Add(rdio_boyardee)
+        pnl_dish_selection.Controls.Add(rdio_sushi)
         pnl_dish_selection.Location = New Point(36, 132)
         pnl_dish_selection.Name = "pnl_dish_selection"
         pnl_dish_selection.Padding = New Padding(10)
-        pnl_dish_selection.Size = New Size(251, 146)
+        pnl_dish_selection.Size = New Size(227, 146)
         pnl_dish_selection.TabIndex = 10
         ' 
         ' pnl_payment_type
@@ -266,10 +266,10 @@ Partial Class Form1
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents rdio_fruit As RadioButton
-    Friend WithEvents rdio_sausage As RadioButton
-    Friend WithEvents rdio_veggie As RadioButton
-    Friend WithEvents rdio_pinwheel As RadioButton
+    Friend WithEvents rdio_durian As RadioButton
+    Friend WithEvents rdio_grits As RadioButton
+    Friend WithEvents rdio_sushi As RadioButton
+    Friend WithEvents rdio_boyardee As RadioButton
     Friend WithEvents rdio_singl_shrimp As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents rdio_pickup_pay As RadioButton
